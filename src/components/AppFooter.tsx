@@ -1,6 +1,5 @@
 import { css } from "@emotion/css";
 import { NoticeList } from "../mock/notice";
-import SlidingText from "./SlidingText";
 import { useTheme } from "@emotion/react";
 
 const AppFooterStyle = (bgColor: string) => css`
@@ -14,12 +13,6 @@ const AppFooter = () => {
 
   return (
     <footer className={AppFooterStyle(theme.colors.neutral100)}>
-      <SlidingText
-        textList={noticeList}
-        direction="vertical"
-        time={2000}
-        visibleKey="title"
-      />
     </footer>
   );
 };

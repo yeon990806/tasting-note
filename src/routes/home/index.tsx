@@ -1,7 +1,9 @@
+import HeatMap from "../../components/ui/HeatMap";
+
 const RouteHome = () => {
   return (
     <section>
-      Home
+      <HeatMap currentYear={2024} />
     </section>
   );
 };
